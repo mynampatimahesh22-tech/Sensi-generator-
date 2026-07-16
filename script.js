@@ -5,8 +5,7 @@ function generateSensitivity() {
   const refresh = parseInt(document.getElementById("refresh").value);
   const processor = document.getElementById("processor").value;
   const style = document.getElementById("style").value;
-  const storage = parseInt(document.getElementById("storage").value);
-
+  
   let score = 0;
 
   score += ram * 4;
@@ -66,7 +65,7 @@ function generateSensitivity() {
     <p>4x Scope : ${x4}</p>
     <p>Sniper Scope : ${sniper}</p>
     <p>Free Look : ${freeLook}</p>
-    <p>Storage : ${storage} GB</p>
+    
     <p>Fire Button Size : ${fireButtonSize}%</p>
   `;
 }
