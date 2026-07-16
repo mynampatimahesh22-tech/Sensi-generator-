@@ -5,7 +5,8 @@ function generateSensitivity() {
   const refresh = parseInt(document.getElementById("refresh").value);
   const processor = document.getElementById("processor").value;
   const style = document.getElementById("style").value;
-const storage = parseInt(document.getElementById("storage").value);
+  const storage = parseInt(document.getElementById("storage").value);
+
   let score = 0;
 
   score += ram * 4;
@@ -16,14 +17,17 @@ const storage = parseInt(document.getElementById("storage").value);
     case "dim9000":
       score += 30;
       break;
+
     case "snap7":
     case "dim8000":
       score += 20;
       break;
+
     case "snap6":
     case "dim7000":
       score += 12;
       break;
+
     default:
       score += 8;
   }
@@ -41,15 +45,17 @@ const storage = parseInt(document.getElementById("storage").value);
   const x4 = limit(score + 70);
   const sniper = limit(score + 40);
   const freeLook = 200;
-let fireButtonSize;
 
-if (ram >= 8 && refresh >= 120 && storage >= 128) {
-  fireButtonSize = 48;
-} else if (ram >= 6) {
-  fireButtonSize = 46;
-} else {
-  fireButtonSize = 44;
-}
+  let fireButtonSize;
+
+  if (ram >= 8 && refresh >= 120 && storage >= 128) {
+    fireButtonSize = 48;
+  } else if (ram >= 6) {
+    fireButtonSize = 46;
+  } else {
+    fireButtonSize = 44;
+  }
+
   document.getElementById("result").innerHTML = `
     <h2>Generated Sensitivity</h2>
     <p><b>Device:</b> ${device}</p>
@@ -59,8 +65,8 @@ if (ram >= 8 && refresh >= 120 && storage >= 128) {
     <p>2x Scope : ${x2}</p>
     <p>4x Scope : ${x4}</p>
     <p>Sniper Scope : ${sniper}</p>
-<p>Free Look : ${freeLook}</p>
-<p>Storage : ${storage} GB</p>
-<p>Fire Button Size : ${fireButtonSize}%</p>
-`;
+    <p>Free Look : ${freeLook}</p>
+    <p>Storage : ${storage} GB</p>
+    <p>Fire Button Size : ${fireButtonSize}%</p>
+  `;
 }
