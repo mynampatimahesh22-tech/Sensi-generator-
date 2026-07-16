@@ -60,3 +60,11 @@ button{
   border-radius:12px;
   background:#22222b;
 }
+
+.subtitle{
+  text-align:center;
+  opacity:0.8;
+  margin-top:-15px;
+  margin-bottom:20px;
+  font-size:16px;
+}
