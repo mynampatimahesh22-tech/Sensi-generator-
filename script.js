@@ -59,7 +59,8 @@ if (ram >= 8 && refresh >= 120 && storage >= 128) {
     <p>2x Scope : ${x2}</p>
     <p>4x Scope : ${x4}</p>
     <p>Sniper Scope : ${sniper}</p>
-    <p>Free Look : ${freeLook}</p>
-  `;<p>Storage : ${storage} GB</p>
+<p>Free Look : ${freeLook}</p>
+<p>Storage : ${storage} GB</p>
 <p>Fire Button Size : ${fireButtonSize}%</p>
+`;
 }
