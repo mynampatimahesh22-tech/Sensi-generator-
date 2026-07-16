@@ -69,4 +69,4 @@ function generateSensitivity() {
     <p>Fire Button Size : ${fireButtonSize}%</p>
   `;
 }
- 
+  
