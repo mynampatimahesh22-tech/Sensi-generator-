@@ -47,13 +47,13 @@ function generateSensitivity() {
 
   let fireButtonSize;
 
-  if (ram >= 8 && refresh >= 120 && storage >= 128) {
-    fireButtonSize = 48;
-  } else if (ram >= 6) {
-    fireButtonSize = 46;
-  } else {
-    fireButtonSize = 44;
-  }
+if (ram >= 8 && refresh >= 120) {
+  fireButtonSize = 48;
+} else if (ram >= 6) {
+  fireButtonSize = 46;
+} else {
+  fireButtonSize = 44;
+}
 
   document.getElementById("result").innerHTML = `
     <h2>Generated Sensitivity</h2>
