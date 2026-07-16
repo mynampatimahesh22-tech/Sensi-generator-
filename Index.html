@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Free Fire Sensitivity Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🤖 AI Free Fire Sensitivity Generator</h1>
+
+  <label>Device Name</label>
+  <input type="text" id="device" placeholder="Example: Motorola G86 Power">
+
+  <label>RAM</label>
+  <select id="ram">
+    <option value="4">4 GB</option>
+    <option value="6">6 GB</option>
+    <option value="8" selected>8 GB</option>
+    <option value="12">12 GB</option>
+    <option value="16">16 GB</option>
+  </select>
+
+  <label>Processor</label>
+  <select id="processor">
+    <option value="snap8">Snapdragon 8 Series</option>
+    <option value="snap7">Snapdragon 7 Series</option>
+    <option value="snap6">Snapdragon 6 Series</option>
+    <option value="dim9000">Dimensity 9000+</option>
+    <option value="dim8000">Dimensity 8000 Series</option>
+    <option value="dim7000" selected>Dimensity 7000 Series</option>
+    <option value="other">Other</option>
+  </select>
+
+  <label>Refresh Rate</label>
+  <select id="refresh">
+    <option value="60">60Hz</option>
+    <option value="90">90Hz</option>
+    <option value="120" selected>120Hz</option>
+    <option value="144">144Hz</option>
+  </select>
+
+  <label>Play Style</label>
+  <select id="style">
+    <option value="rush">Rush</option>
+    <option value="balanced" selected>Balanced</option>
+    <option value="sniper">Sniper</option>
+  </select>
+
+  <button onclick="generateSensitivity()">
+    Generate AI Sensitivity
+  </button>
+
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
